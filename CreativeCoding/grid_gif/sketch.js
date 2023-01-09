@@ -1,8 +1,8 @@
 //create a program that can customize the number of squares in a grid
 
-let gif; // img for stattic image
+let img; // img for stattic image
 function preload(){
-  gif = loadImage(assets/BG_Graphic.png); //preload my image
+  img = loadImage(assets/BG_Graphic.png); //preload my image
 }
 
 function setup() {//runs one time
