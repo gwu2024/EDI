@@ -18,10 +18,17 @@ strokeWeight (1);
 var num = 2; //number of squares in my array
 var sideLen = windowWidth/num; //side length
 
-for (var y = 0; y < windowWidth; y = y + sideLen) {// loop creates a row in the y direction
-for (var x = 0; x < windowWidth; x = x + sideLen) {// loop creates a row in the x direction
+translate (-150, -150);// this will give your design bleed effect
+
+
+for (var y = 0; y < 2 * windowWidth; y = y + sideLen) {// loop creates a row in the y direction
+for (var x = 0; x < 2 * windowWidth; x = x + sideLen) {// loop creates a row in the x direction
 
       image (img, x, y, windowWidth/num, windowWidth/num);
 }
+}
+
+function windowResized () {
+  resizeCanvas (windowWidth, windowHeight);//this resizes and refreshes your design with the browser
 }
 }
